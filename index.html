@@ -3,159 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Priyanshu Sharma | Neon Glow Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Priyanshu Sharma · Dual-Mode Portfolio</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Separate CSS Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav id="navbar">
-    <div class="nav-logo">PS.</div>
-    <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+    <div class="nav-logo">PS<span style="color: var(--accent);">✦</span></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Home</a></li>
+        <li><a href="#home" class="active-link">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle" class="theme-btn">☀︎ Light Mode</button></li>
+        <li><button id="darkModeToggle" class="theme-btn"><i class="fas fa-moon"></i> Dark/Light</button></li>
     </ul>
 </nav>
 
-<section id="hero" class="section-black full-height flex-center">
-    <div class="hero-content reveal">
-        <h4 class="date-stamp">2026-2027</h4>
-        <h1 class="mega-title">
-            <span class="orange-text glow-portfolio">PORT-</span><br>
-            <span class="glow-portfolio">FOLIO</span>
-        </h1>
-        <div class="hero-badge">CREATIVE</div>
-        <div class="profile-tag">
-            <img src="myself.jpeg" alt="Priyanshu Sharma" class="avatar-image">
-            <h3>PRIYANSHU SHARMA</h3>
-        </div>
-    </div>
-</section>
-
-<section id="about" class="section-orange">
-    <div class="container reveal">
-        <h2 class="section-title">INTRO<br>DUCTION</h2>
-        <div class="about-content">
-            <h3>Hello I'm Priyanshu Sharma</h3>
-            <p>Motivated Computer Application graduate with expertise in Java, Python, and web development. Skilled in building real-world software applications and collaborating effectively in team environments. Eager to contribute technical knowledge to innovative projects in a tech-driven organization.</p> 
-        </div>
-    </div>
-</section>
-
-<section id="education" class="section-black">
-    <div class="container reveal">
-        <h2 class="section-title orange-text">EDUCATION</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h4>2025 - Present</h4> 
-                <h3>Kalinga Institute of Industrial Technology</h3> 
-                <p>Master of Computer Applications (MCA) | CGPA: 7.5</p> 
-            </div>
-            <div class="timeline-item">
-                <h4>2022 - 2025</h4> 
-                <h3>Techno India University</h3> 
-                <p>Bachelor of Computer Applications (BCA) | CGPA: 7.82</p> 
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="section-primary full-height flex-center">
+        <div class="container text-center reveal">
+            <div class="date-stamp"><i class="far fa-calendar-alt"></i> 2025 — dynamic portfolio</div>
+            <div class="mega-title">Priyanshu <span class="accent-text">Sharma</span></div>
+            <div class="hero-badge">full-stack · creative coder</div>
+            <div class="profile-tag">
+                <div class="avatar-image" style="background: radial-gradient(circle at 30% 30%, var(--accent), #2c2c3a); display: flex; align-items: center; justify-content: center; font-size: 2.2rem; color: white;">PS</div>
+                <h3>crafting digital experiences · minimal & bold</h3>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="experience" class="section-beige">
-    <div class="container flex-row reveal">
-        <div class="half-col padding-right">
-            <h2 class="section-title orange-text">PERSONAL SKILLS</h2>
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> Java, Python, C</li> 
-                <li><strong>Frameworks & Libraries:</strong> React, NumPy, Pandas</li> 
-                <li><strong>Tools & DB:</strong> Git/GitHub, MySQL, SQL</li> 
-                <li><strong>Soft Skills:</strong> Adaptability, Time Management, Collaboration</li> 
-            </ul>
-        </div>
-        <div class="half-col inner-box">
-            <h2 class="section-title" style="color:white;">WORK EXPERIENCE</h2>
-            <div class="job">
-                <h4>Sep 2024 - Oct 2024</h4> 
-                <h3>Web Development Intern</h3> 
-                <p><strong>Acmegrade</strong></p> 
-                <p>Collaborated in building responsive web applications using modern web technologies. Assisted in deployment and maintenance of production-grade web systems.</p> 
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects" class="section-black portfolio-section-glow">
-    <div class="container reveal">
-        <h2 class="section-title">PROJECT<br><span class="orange-text">PORTFOLIO</span></h2>
-    </div>
-</section>
-
-<section class="section-beige project-panel" id="project1">
-    <div class="container flex-row reveal">
-        <div class="half-col">
-            <h2 class="project-title orange-text project-title-glow">PROJECT 1</h2>
-            <h3>Banking Management System</h3> 
-            <p>Built a web-based AI banking assistant using Streamlit, enabling users to access account details and manage transactions, improving user task completion time by 40%.</p> 
-        </div>
-        <div class="half-col grid-images">
-            <div class="img-ph"></div>
-            <div class="img-ph"></div>
-        </div>
-    </div>
-</section>
-
-<section class="section-orange project-panel" id="project2">
-    <div class="container flex-row reveal">
-         <div class="half-col">
-            <h2 class="project-title text-black project-title-glow">PROJECT 2</h2>
-            <h3>Employee Management System</h3> 
-            <p>Developed a full-stack employee management system to streamline HR workflows (Java, MySQL), reducing manual processing time by 50% and improving data accuracy by 35%.</p> 
-        </div>
-        <div class="half-col grid-images">
-            <div class="img-ph dark-ph"></div>
-            <div class="img-ph dark-ph"></div>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="section-beige full-height flex-center text-center">
-    <div class="container reveal">
-        <h1 class="mega-title orange-text">THANK YOU</h1>
-        <div class="contact-box">
-            <span></span>
-            <h2>LET'S WORK TOGETHER</h2>
-        </div>
-        
-        <!-- SLIDE TO ANSWER INTERACTION -->
-        <div class="slide-container">
-            <div class="slide-to-unlock" id="slideToUnlock">
-                <div class="slide-track">
-                    <div class="slide-thumb" id="slideThumb">
-                        <span>→</span>
+    <!-- About + Skills + Timeline -->
+    <section id="about" class="section-secondary">
+        <div class="container">
+            <div class="flex-row">
+                <div class="half-col reveal">
+                    <h2 class="section-title">about<span class="accent-text">.</span></h2>
+                    <p>I'm Priyanshu, a passionate developer from Kolkata, India. With 4+ years of experience in modern web ecosystems, I blend design thinking with robust engineering. Currently focused on interactive UI, design systems, and full-stack applications.</p>
+                    <div class="inner-box" style="margin-top: 2rem;">
+                        <h3><i class="fas fa-code"></i> core philosophy</h3>
+                        <p>Clean code, meaningful animations, and accessible experiences. Every project tells a story.</p>
                     </div>
-                    <div class="slide-label">slide to reveal contact</div>
+                </div>
+                <div class="half-col reveal">
+                    <h2 class="section-title">journey & <span class="accent-text">skills</span></h2>
+                    <div class="timeline-item">
+                        <h4>2024 — now · senior frontend architect</h4>
+                        <p>Leading UI innovation & design systems, mentoring cross-functional teams.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2021 — 2024 · creative developer</h4>
+                        <p>Built 20+ production apps, interactive dashboards, and design-heavy platforms.</p>
+                    </div>
+                    <ul class="skills-list">
+                        <li><strong>⚡ React / Vue</strong> — component-driven architecture</li>
+                        <li><strong>🎨 GSAP / Framer Motion</strong> — buttery micro-interactions</li>
+                        <li><strong>🖌️ Tailwind / CSS-in-JS</strong> — adaptive theming</li>
+                        <li><strong>🌙 light/dark dual mode</strong> — seamless transition</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="slide-success-message" id="slideSuccessMsg">
-            ✨ Contact unlocked! ✨
-        </div>
-        
-        <div class="contact-info" id="contactInfo">
-            <p>📍 Kolkata, India</p> 
-            <p>📞 +91 7439451492</p> 
-            <p>✉️ priyanshusharma02098@gmail.com</p> 
-        </div>
-    </div>
-</section>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Projects Section -->
+    <section id="projects" class="section-primary">
+        <div class="container text-center reveal">
+            <h2 class="section-title">selected <span class="accent-text">work</span></h2>
+            <div class="flex-row" style="justify-content: center; gap: 2rem;">
+                <div class="inner-box" style="max-width: 380px;">
+                    <div class="project-title">Nebula UI <i class="fas fa-palette"></i></div>
+                    <p>Component library used by 500+ devs. Dual-mode, fully accessible and open-source.</p>
+                    <div class="grid-images">
+                        <div class="img-ph"></div>
+                        <div class="img-ph"></div>
+                    </div>
+                </div>
+                <div class="inner-box" style="max-width: 380px;">
+                    <div class="project-title">SlideFlow <i class="fas fa-sliders-h"></i></div>
+                    <p>Interactive storytelling with slide gestures and smooth transitions — award-winner 2024.</p>
+                    <div class="grid-images">
+                        <div class="img-ph"></div>
+                        <div class="img-ph"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVERSIBLE SLIDE SWITCH (contact hide/reveal) + slow speed + soft glow -->
+    <section class="section-secondary" id="slide-section">
+        <div class="container text-center reveal">
+            <h2 class="section-title">slide to <span class="accent-text">unlock contact</span></h2>
+            <div class="slide-container">
+                <div class="slide-switch-wrapper">
+                    <div class="slide-switch-track" id="slideTrack">
+                        <div class="slide-switch-thumb" id="slideThumb">
+                            <span class="thumb-icon"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="slide-switch-label" id="slideLabel">
+                            <span>→ slide to reveal ←</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-status-message" id="slidesStatusMsg"></div>
+            <!-- dynamic contact info that hides/shows with slide -->
+            <div id="contactDynamicWrapper" style="transition: all 0.4s ease;">
+                <!-- initially hidden contact info (slide to show) -->
+                <div id="contactInfoPanel" style="opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.5s cubic-bezier(0.2, 0.9, 0.4, 1.1), visibility 0s linear 0.4s, transform 0.4s ease;">
+                    <div class="contact-info" id="contactInfo">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Kolkata, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <span>+91 7439451492</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <a href="mailto:priyanshusharma02098@gmail.com">priyanshusharma02098@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github contact-icon"></i>
+                            <a href="https://github.com/priyanshusharma" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin-in contact-icon"></i>
+                            <a href="https://linkedin.com/in/priyanshusharma" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- subtle thank you glow message -->
+            <div class="thanks-message" id="thankyouGlow" style="margin-top: 1.5rem;">✨ thank you for sliding ✨</div>
+        </div>
+    </section>
+
+    <!-- extra contact section for consistency -->
+    <section id="contact" class="section-primary text-center">
+        <div class="container reveal">
+            <h2 class="section-title">let's <span class="accent-text">connect</span></h2>
+            <p style="max-width: 600px; margin: 0 auto;">Feel free to reach out for collaborations or just a friendly hello.</p>
+            <a href="mailto:priyanshusharma02098@gmail.com" class="contact-box"><i class="fas fa-paper-plane"></i> say hello</a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Priyanshu Sharma • crafted with <span class="accent-text">⟡</span> and dual-mode magic</p>
+    </footer>
+</main>
+
+<script>
+    // Smooth sliding mechanism (reversible) + slow speed + soft glow message
+    (function() {
+        const track = document.getElementById('slideTrack');
+        const thumb = document.getElementById('slideThumb');
+        const statusMsg = document.getElementById('slidesStatusMsg');
+        const contactPanel = document.getElementById('contactInfoPanel');
+        const thankYouElem = document.getElementById('thankyouGlow');
+        
+        let isContactVisible = false;   // initially hidden (slide to right to show)
+        let maxLeft = 0;
+        let trackWidth = 0;
+        let thumbWidth = 58;
+        
+        function updateDimensions() {
+            if(!track) return;
+            const trackRect = track.getBoundingClientRect();
+            trackWidth = trackRect.width;
+            thumbWidth = thumb.offsetWidth;
+            maxLeft = trackWidth - thumbWidth;
+        }
+        
+        function setSlidePosition(visible) {
+            if(!thumb) return;
+            const targetLeft = visible ? maxLeft : 0;
+            thumb.style.left = targetLeft + 'px';
+            // update label text
+            const labelSpan = document.querySelector('#slideLabel span');
+            if(labelSpan) {
+                if(visible) {
+                    labelSpan.innerHTML = '✓ contact visible ✓';
+                } else {
+                    labelSpan.innerHTML = '← slide to reveal →';
+                }
+            }
+            // update contact panel visibility with smooth transition
+            if(contactPanel) {
+                if(visible) {
+                    contactPanel.style.visibility = 'visible';
+                    contactPanel.style.opacity = '1';
+                    contactPanel.style.transform = 'translateY(0px)';
+                    statusMsg.innerHTML = '✨ contact info is now visible ✨';
+                    statusMsg.style.opacity = '1';
+                    // soft glow thank you effect
+                    thankYouElem.style.boxShadow = '0 0 12px var(--accent-glow)';
+                    thankYouElem.style.transition = 'box-shadow 0.3s';
+                    setTimeout(() => {
+                        thankYouElem.style.boxShadow = 'none';
+                    }, 800);
+                } else {
+                    contactPanel.style.opacity = '0';
+                    contactPanel.style.transform = 'translateY(10px)';
+                    contactPanel.style.visibility = 'hidden';
+                    statusMsg.innerHTML = 'slide right to reveal contact details →';
+                }
+            }
+        }
+        
+        function toggleSlide() {
+            isContactVisible = !isContactVisible;
+            setSlidePosition(isContactVisible);
+        }
+        
+        // click on track toggles (reversible)
+        if(track) {
+            track.addEventListener('click', (e) => {
+                if(e.target === thumb || thumb.contains(e.target)) return;
+                toggleSlide();
+            });
+        }
+        
+        // also make thumb clickable
+        if(thumb) {
+            thumb.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleSlide();
+            });
+        }
+        
+        window.addEventListener('resize', () => {
+            updateDimensions();
+            setSlidePosition(isContactVisible);
+        });
+        
+        updateDimensions();
+        setSlidePosition(false); // start hidden
+    })();
+
+    // Dark/Light mode toggle + preserve icons
+    const darkToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    if(localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+    }
+    darkToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        // update button icon
+        const icon = darkToggle.querySelector('i');
+        if(icon) {
+            if(isDark) icon.className = 'fas fa-sun';
+            else icon.className = 'fas fa-moon';
+        }
+    });
+    // set initial icon
+    if(body.classList.contains('dark-mode')) {
+        darkToggle.querySelector('i').className = 'fas fa-sun';
+    } else {
+        darkToggle.querySelector('i').className = 'fas fa-moon';
+    }
+
+    // mobile nav toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if(menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    // active link scroll + reveal animations
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-links a');
+    function handleScroll() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            if(pageYOffset >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+        navItems.forEach(link => {
+            link.classList.remove('active-link');
+            if(link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active-link');
+            }
+        });
+        // reveal animation on scroll
+        document.querySelectorAll('.reveal').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < window.innerHeight - 100) {
+                el.classList.add('active');
+            }
+        });
+    }
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', () => {
+        handleScroll();
+        // initial reveal
+        document.querySelectorAll('.reveal').forEach(el => {
+            if(el.getBoundingClientRect().top < window.innerHeight - 80) el.classList.add('active');
+        });
+    });
+</script>
 </body>
 </html>
