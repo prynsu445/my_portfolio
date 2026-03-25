@@ -2,125 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyanshu Sharma | My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Priyanshu Sharma | Neon Glow Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav id="navbar">
-        <div class="nav-logo">PS.</div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><button id="theme-toggle" class="theme-btn">☀︎ Light Mode</button></li>
-        </ul>
-    </nav>
+<nav id="navbar">
+    <div class="nav-logo">PS.</div>
+    <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="theme-btn">☀︎ Light Mode</button></li>
+    </ul>
+</nav>
 
-    <section id="hero" class="section-black full-height flex-center">
-        <div class="hero-content reveal">
-            <h4 class="date-stamp">2026-2027</h4>
-            <h1 class="mega-title"><span class="orange-text">PORT-</span><br>FOLIO</h1>
-            <div class="hero-badge">CREATIVE</div>
-            <div class="profile-tag">
-                <img src="C:\Users\KIIT\Desktop\project\portfolio\WhatsApp Image 2026-03-24 at 10.44.27 PM.png" alt="Priyanshu Sharma" class="avatar-image">
-                <h3>PRIYANSHU SHARMA</h3> 
+<section id="hero" class="section-black full-height flex-center">
+    <div class="hero-content reveal">
+        <h4 class="date-stamp">2026-2027</h4>
+        <h1 class="mega-title">
+            <span class="orange-text glow-portfolio">PORT-</span><br>
+            <span class="glow-portfolio">FOLIO</span>
+        </h1>
+        <div class="hero-badge">CREATIVE</div>
+        <div class="profile-tag">
+            <img src="myself.jpeg" alt="Priyanshu Sharma" class="avatar-image">
+            <h3>PRIYANSHU SHARMA</h3>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section-orange">
+    <div class="container reveal">
+        <h2 class="section-title">INTRO<br>DUCTION</h2>
+        <div class="about-content">
+            <h3>Hello I'm Priyanshu Sharma</h3>
+            <p>Motivated Computer Application graduate with expertise in Java, Python, and web development. Skilled in building real-world software applications and collaborating effectively in team environments. Eager to contribute technical knowledge to innovative projects in a tech-driven organization.</p> 
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section-black">
+    <div class="container reveal">
+        <h2 class="section-title orange-text">EDUCATION</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>2025 - Present</h4> 
+                <h3>Kalinga Institute of Industrial Technology</h3> 
+                <p>Master of Computer Applications (MCA) | CGPA: 7.5</p> 
+            </div>
+            <div class="timeline-item">
+                <h4>2022 - 2025</h4> 
+                <h3>Techno India University</h3> 
+                <p>Bachelor of Computer Applications (BCA) | CGPA: 7.82</p> 
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about" class="section-orange">
-        <div class="container reveal">
-            <h2 class="section-title">INTRO<br>DUCTION</h2>
-            <div class="about-content">
-                <h3>Hello I'm Priyanshu Sharma</h3>
-                <p>Motivated Computer Application graduate with expertise in Java, Python, and web development. Skilled in building real-world software applications and collaborating effectively in team environments. Eager to contribute technical knowledge to innovative projects in a tech-driven organization.</p> 
+<section id="experience" class="section-beige">
+    <div class="container flex-row reveal">
+        <div class="half-col padding-right">
+            <h2 class="section-title orange-text">PERSONAL SKILLS</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> Java, Python, C</li> 
+                <li><strong>Frameworks & Libraries:</strong> React, NumPy, Pandas</li> 
+                <li><strong>Tools & DB:</strong> Git/GitHub, MySQL, SQL</li> 
+                <li><strong>Soft Skills:</strong> Adaptability, Time Management, Collaboration</li> 
+            </ul>
+        </div>
+        <div class="half-col inner-box">
+            <h2 class="section-title" style="color:white;">WORK EXPERIENCE</h2>
+            <div class="job">
+                <h4>Sep 2024 - Oct 2024</h4> 
+                <h3>Web Development Intern</h3> 
+                <p><strong>Acmegrade</strong></p> 
+                <p>Collaborated in building responsive web applications using modern web technologies. Assisted in deployment and maintenance of production-grade web systems.</p> 
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="education" class="section-black">
-        <div class="container reveal">
-            <h2 class="section-title orange-text">EDUCATION</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4>2025 - Present</h4> <h3>Kalinga Institute of Industrial Technology</h3> <p>Master of Computer Applications (MCA) | CGPA: 7.5</p> 
+<section id="projects" class="section-black portfolio-section-glow">
+    <div class="container reveal">
+        <h2 class="section-title">PROJECT<br><span class="orange-text">PORTFOLIO</span></h2>
+    </div>
+</section>
+
+<section class="section-beige project-panel" id="project1">
+    <div class="container flex-row reveal">
+        <div class="half-col">
+            <h2 class="project-title orange-text project-title-glow">PROJECT 1</h2>
+            <h3>Banking Management System</h3> 
+            <p>Built a web-based AI banking assistant using Streamlit, enabling users to access account details and manage transactions, improving user task completion time by 40%.</p> 
+        </div>
+        <div class="half-col grid-images">
+            <div class="img-ph"></div>
+            <div class="img-ph"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section-orange project-panel" id="project2">
+    <div class="container flex-row reveal">
+         <div class="half-col">
+            <h2 class="project-title text-black project-title-glow">PROJECT 2</h2>
+            <h3>Employee Management System</h3> 
+            <p>Developed a full-stack employee management system to streamline HR workflows (Java, MySQL), reducing manual processing time by 50% and improving data accuracy by 35%.</p> 
+        </div>
+        <div class="half-col grid-images">
+            <div class="img-ph dark-ph"></div>
+            <div class="img-ph dark-ph"></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section-beige full-height flex-center text-center">
+    <div class="container reveal">
+        <h1 class="mega-title orange-text">THANK YOU</h1>
+        <div class="contact-box">
+            <span></span>
+            <h2>LET'S WORK TOGETHER</h2>
+        </div>
+        
+        <!-- SLIDE TO ANSWER INTERACTION -->
+        <div class="slide-container">
+            <div class="slide-to-unlock" id="slideToUnlock">
+                <div class="slide-track">
+                    <div class="slide-thumb" id="slideThumb">
+                        <span>→</span>
+                    </div>
+                    <div class="slide-label">slide to reveal contact</div>
                 </div>
-                <div class="timeline-item">
-                    <h4>2022 - 2025</h4> <h3>Techno India University</h3> <p>Bachelor of Computer Applications (BCA) | CGPA: 7.82</p> 
-                </div>
             </div>
         </div>
-    </section>
-
-    <section id="experience" class="section-beige">
-        <div class="container flex-row reveal">
-            <div class="half-col padding-right">
-                <h2 class="section-title orange-text">PERSONAL SKILLS</h2>
-                <ul class="skills-list">
-                    <li><strong>Languages:</strong> Java, Python, C</li> 
-                    <li><strong>Frameworks & Libraries:</strong> React, NumPy, Pandas</li> 
-                    <li><strong>Tools & DB:</strong> Git/GitHub, MySQL, SQL</li> 
-                    <li><strong>Soft Skills:</strong> Adaptability, Time Management, Collaboration</li> 
-                </ul>
-            </div>
-            <div class="half-col section-orange inner-box">
-                <h2 class="section-title">WORK EXPERIENCE</h2>
-                <div class="job">
-                    <h4>Sep 2024 - Oct 2024</h4> <h3>Web Development Intern</h3> <p><strong>Acmegrade</strong></p> <p>Collaborated in building responsive web applications using modern web technologies. Assisted in deployment and maintenance of production-grade web systems.</p> 
-                </div>
-            </div>
+        <div class="slide-success-message" id="slideSuccessMsg">
+            ✨ Contact unlocked! ✨
         </div>
-    </section>
-
-    <section id="projects" class="section-black">
-         <div class="container reveal">
-            <h2 class="section-title">PROJECT<br><span class="orange-text">PORTFOLIO</span></h2>
-         </div>
-    </section>
-
-    <section class="section-beige project-panel">
-        <div class="container flex-row reveal">
-            <div class="half-col">
-                <h2 class="project-title">PROJECT 1</h2>
-                <h3>Banking Management System</h3> <p>Built a web-based AI banking assistant using Streamlit, enabling users to access account details and manage transactions, improving user task completion time by 40%.</p> 
-            </div>
-            <div class="half-col grid-images">
-                <div class="img-ph"></div>
-                <div class="img-ph"></div>
-            </div>
+        
+        <div class="contact-info" id="contactInfo">
+            <p>📍 Kolkata, India</p> 
+            <p>📞 +91 7439451492</p> 
+            <p>✉️ priyanshusharma02098@gmail.com</p> 
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="section-orange project-panel">
-        <div class="container flex-row reveal">
-             <div class="half-col">
-                <h2 class="project-title text-black">PROJECT 2</h2>
-                <h3>Employee Management System</h3> <p>Developed a full-stack employee management system to streamline HR workflows (Java, MySQL), reducing manual processing time by 50% and improving data accuracy by 35%.</p> 
-            </div>
-            <div class="half-col grid-images">
-                <div class="img-ph dark-ph"></div>
-                <div class="img-ph dark-ph"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section-beige full-height flex-center text-center">
-        <div class="container reveal">
-            <h1 class="mega-title orange-text">THANK YOU</h1>
-            <div class="contact-box black-bg text-white">
-                <h2>LET'S WORK TOGETHER</h2>
-            </div>
-            <div class="contact-info mt-4">
-                <p>📍 Kolkata, India</p> <p>📞 +91 7439451492</p> <p>✉️ priyanshusharma18015@gmail.com</p> 
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
