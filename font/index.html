@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vetra UI</title>
+    <title>Vetra Growth Strategy</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -20,7 +20,12 @@
             <a href="#">Pricing</a>
             <a href="#">Contact</a>
         </div>
-        <button class="btn btn-primary">Get started</button>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="toggleBtn" aria-label="Toggle Theme">
+                ☀️/🌙
+            </button>
+            <button class="btn btn-primary">Get started</button>
+        </div>
     </nav>
 
     <div class="hero">
@@ -51,24 +56,49 @@
         </div>
 
         <div class="dashboard-mock animate-up delay-2">
-            <div style="width: 200px; display: flex; flex-direction: column; gap: 15px;">
-                <div style="height: 20px; width: 60%; background: #222; border-radius: 4px;"></div>
-                <div style="height: 15px; width: 80%; background: #1a1a1a; border-radius: 4px; margin-top: 20px;"></div>
-                <div style="height: 15px; width: 70%; background: #1a1a1a; border-radius: 4px;"></div>
-                <div style="height: 15px; width: 90%; background: #1a1a1a; border-radius: 4px;"></div>
+            <div class="dash-sidebar">
+                <div class="dash-block w-60 h-20 bg-dark"></div>
+                <div class="dash-block w-80 h-15 bg-light mt-20"></div>
+                <div class="dash-block w-70 h-15 bg-light"></div>
+                <div class="dash-block w-90 h-15 bg-light"></div>
             </div>
-            <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
-                <div style="height: 40px; width: 100%; background: #111; border-radius: 8px;"></div>
-                <div style="display: flex; gap: 20px; height: 100%;">
-                    <div style="flex: 2; background: #111; border-radius: 8px; padding: 15px;">
-                        <div style="height: 15px; width: 30%; background: #222; border-radius: 4px; margin-bottom: 20px;"></div>
-                        <div style="height: 1px; width: 100%; background: #222; margin-bottom: 15px;"></div>
-                        <div style="height: 1px; width: 100%; background: #222; margin-bottom: 15px;"></div>
+            <div class="dash-main">
+                <div class="dash-block w-100 h-40 bg-mid"></div>
+                <div class="dash-grid">
+                    <div class="dash-card flex-2">
+                        <div class="dash-block w-30 h-15 bg-dark mb-20"></div>
+                        <div class="dash-line"></div>
+                        <div class="dash-line"></div>
                     </div>
-                    <div style="flex: 1; background: #111; border-radius: 8px; padding: 15px;">
-                        <div style="height: 15px; width: 50%; background: #222; border-radius: 4px;"></div>
+                    <div class="dash-card flex-1">
+                        <div class="dash-block w-50 h-15 bg-dark"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="strategy-section">
+        <div class="section-header animate-up">
+            <h2>STRATEGY, PRODUCTION, GROWTH<br><span>—WE'VE GOT YOU COVERED.</span></h2>
+        </div>
+
+        <div class="cards-container animate-up delay-1">
+            <div class="card brand-orange">
+                <h3>Channel<br>Strategy<br>& Audit</h3>
+                <p>Data-informed decisions. We identify what works and formulate a strategy with you to scale effectively.</p>
+            </div>
+            <div class="card brand-white">
+                <h3>Content<br>Production<br>& Opt.</h3>
+                <p>From thumbnails to metadata, our production optimization manages deadlines and maximizes your reach.</p>
+            </div>
+            <div class="card brand-dark">
+                <h3>Full Content<br>Creation<br>& Prod.</h3>
+                <p>We handle full content creation from start to finish. Scripts, editing, and publishing that elevates your brand.</p>
+            </div>
+            <div class="card brand-black">
+                <h3>Multi-Channel<br>Network<br>Strategy</h3>
+                <p>Ready to scale beyond one channel? We help you build and manage a network of channels that multiply your reach.</p>
             </div>
         </div>
     </div>
