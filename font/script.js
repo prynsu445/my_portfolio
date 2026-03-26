@@ -1,28 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. Theme Toggle Logic
+
+    // Theme Toggle Functionality
     const toggleBtn = document.getElementById('toggleBtn');
     const body = document.body;
-
+    
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('light-mode');
     });
-
-    // 2. Scroll Animation Logic (Intersection Observer)
+    
+    // Intersection Observer for Scroll Animations
     const animatedElements = document.querySelectorAll('.animate-up');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                // Add the visible class to trigger the CSS transition
                 entry.target.classList.add('visible');
-                // Optional: Stop observing once it's visible so it doesn't animate out
-                // observer.unobserve(entry.target); 
             }
         });
     }, {
-        threshold: 0.1, 
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.1, // Triggers when 10% of the element is visible
+        rootMargin: "0px 0px -50px 0px" // Triggers slightly before the element fully enters the viewport
     });
-
+    
+    // Attach observer to all elements with the animation class
     animatedElements.forEach(el => observer.observe(el));
+    
 });
