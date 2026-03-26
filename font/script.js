@@ -1,29 +1,60 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Theme Toggle Functionality
+    // --- 1. Theme Toggle Logic ---
     const toggleBtn = document.getElementById('toggleBtn');
     const body = document.body;
-    
+
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('light-mode');
     });
-    
-    // Intersection Observer for Scroll Animations
+
+    // --- 2. Intersection Observer (Scroll Animations) ---
     const animatedElements = document.querySelectorAll('.animate-up');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add the visible class to trigger the CSS transition
                 entry.target.classList.add('visible');
             }
         });
     }, {
-        threshold: 0.1, // Triggers when 10% of the element is visible
-        rootMargin: "0px 0px -50px 0px" // Triggers slightly before the element fully enters the viewport
+        threshold: 0.1, 
+        rootMargin: "0px 0px -50px 0px" 
     });
-    
-    // Attach observer to all elements with the animation class
+
     animatedElements.forEach(el => observer.observe(el));
-    
+
+
+    // --- 3. Sliding Sidebar Logic ---
+    const sidebar = document.getElementById('contactSidebar');
+    const closeBtn = document.getElementById('closeSidebarBtn');
+
+    // Find all buttons or anchor tags that contain the target phrases
+    const openButtons = document.querySelectorAll('button, a.btn');
+
+    openButtons.forEach(btn => {
+        if(btn.textContent.includes('Contact Me') || btn.textContent.includes('Get Started')) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault(); // Stop page reload/jump
+                sidebar.classList.add('active');
+            });
+        }
+    });
+
+    // Close sidebar when clicking the X button
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+
+    // Close sidebar if user clicks completely outside of it
+    document.addEventListener('click', (e) => {
+        if (sidebar.classList.contains('active') && 
+            !sidebar.contains(e.target) && 
+            !e.target.textContent.includes('Contact Me') && 
+            !e.target.textContent.includes('Get Started')) {
+            
+            sidebar.classList.remove('active');
+        }
+    });
+
 });
