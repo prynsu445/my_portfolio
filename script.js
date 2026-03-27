@@ -1,13 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- 1. Theme Toggle Logic ---
-    const toggleBtn = document.getElementById('toggleBtn');
+    // --- 1. Element Selectors ---
     const body = document.body;
+    const toggleBtn = document.getElementById('toggleBtn');
+    const sidebar = document.getElementById('contactSidebar');
+    const closeBtn = document.getElementById('closeSidebarBtn');
+    
+    // Select all buttons that should open the sidebar
+    const openButtons = document.querySelectorAll('.btn-primary, .pill-badge, .open-contact');
 
+    // --- 2. Theme Toggle Logic ---
     toggleBtn?.addEventListener('click', () => {
         body.classList.toggle('light-mode');
+        // Optional: Save preference to local storage
+        const isLight = body.classList.contains('light-mode');
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
     });
 
-    // --- 2. Intersection Observer (Scroll Animations) ---
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light-mode');
+    }
+
+    // --- 3. Intersection Observer (Scroll Animations) ---
     const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px"
@@ -17,42 +31,47 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Performance: stop observing once visible
+                observer.unobserve(entry.target); 
             }
         });
     }, observerOptions);
 
     document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
 
-    // --- 3. Sliding Sidebar Logic ---
-    const sidebar = document.getElementById('contactSidebar');
-    const closeBtn = document.getElementById('closeSidebarBtn');
-    
-    // Select all potential triggers (including the new floating button if you added it)
-    const openButtons = document.querySelectorAll('button, a.btn, .open-contact');
-
+    // --- 4. Sliding Sidebar Logic ---
     const toggleSidebar = (state) => {
-        sidebar?.classList.toggle('active', state);
+        if (sidebar) {
+            sidebar.classList.toggle('active', state);
+            // Toggle a class on body to prevent scrolling when sidebar is open
+            body.style.overflow = state ? 'hidden' : 'initial';
+        }
     };
 
+    // Open Sidebar Trigger
     openButtons.forEach(btn => {
-        if (btn.textContent.includes('Contact Me') || btn.textContent.includes('Get Started') || btn.classList.contains('open-contact')) {
-            btn.addEventListener('click', (e) => {
+        btn.addEventListener('click', (e) => {
+            // Only trigger if it's a "Contact" or "Get Started" button
+            if (btn.textContent.includes('Contact') || btn.textContent.includes('Get Started')) {
                 e.preventDefault();
                 toggleSidebar(true);
-            });
-        }
+            }
+        });
     });
 
+    // Close Sidebar (X Button)
     closeBtn?.addEventListener('click', () => toggleSidebar(false));
 
-    // Close sidebar if user clicks completely outside of it
+    // Close on Outside Click or Escape Key
     document.addEventListener('click', (e) => {
-        const isTrigger = Array.from(openButtons).some(btn => btn.contains(e.target));
         const isClickInsideSidebar = sidebar?.contains(e.target);
+        const isTrigger = Array.from(openButtons).some(btn => btn.contains(e.target));
 
         if (sidebar?.classList.contains('active') && !isClickInsideSidebar && !isTrigger) {
             toggleSidebar(false);
         }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') toggleSidebar(false);
     });
 });
