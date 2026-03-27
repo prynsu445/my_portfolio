@@ -1,145 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyanshu Sharma | Portfolio</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>P.Sharma Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
-    <nav>
-        <div class="logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
-            P.Sharma
-        </div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-        </div>
-        <div class="nav-actions">
-            <button class="theme-toggle" id="toggleBtn" aria-label="Toggle Theme">☀︎ / ⏾ </button>
-            <button class="btn btn-primary">Contact Me</button>
-        </div>
-    </nav>
 
-    <section class="hero-section">
-        <div class="hero-container text-center">
-            
-            <button class="pill-badge animate-up">
-                Available for Opportunities <span>→</span>
-            </button>
-            
-            <div class="hero-title-wrapper animate-up delay-1">
-                <h1 class="glow-text">PRIYANSHU SHARMA</h1>
-                <div class="profile-orbit-container">
-                    <div class="profile-img-placeholder">
-                        <img src="myself.jpeg" alt="Priyanshu Sharma">
-                    </div> 
-                    <div class="orbit-path"></div>
-                    <div class="orbit-planet"></div>
-                </div>
-            </div>
-            
-            <h2 class="animate-up delay-2">Master Of Computer Applicance Student | Web Developer</h2>
-            
-            <p class="animate-up delay-3 hero-desc">
-                Motivated Computer Application graduate with expertise in Java, Python, and web development. Skilled in building real-world software applications and collaborating effectively in team environments.
-            </p>
-            
-            <div class="hero-buttons animate-up delay-3">
-                <a href="#projects" class="btn btn-outline">View Projects</a>
-                <button class="btn btn-primary">Contact Me</button>
-            </div>
+<!-- NAVBAR -->
+<nav>
 
-        </div>
+<div class="logo">
+<span class="arrow">&lt;&gt;</span>
+P.Sharma
+</div>
 
-        <div class="hero-horizon"></div>
-    </section>
+<ul>
+<li><a href="#hero">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+</ul>
 
-    <section id="about" class="section-container relative-z">
-        <div class="section-header animate-up">
-            <h2>ABOUT ME</h2>
-            <span class="gradient-text">— WHO I AM</span>
-        </div>
-        <div class="glass-card animate-up delay-1 text-center max-w-800 mx-auto">
-            <p>Eager to contribute technical knowledge to innovative projects in a tech-driven organization. Currently pursuing Master of Computer Applications (MCA) at Kalinga Institute of Industrial Technology, building upon a strong foundation from my BCA at Techno India University.</p>
-        </div>
-    </section>
+<div class="nav-right">
 
-    <section id="skills" class="section-container relative-z">
-        <div class="section-header text-center animate-up">
-            <h2>Technical Skills</h2>
-            <span class="gradient-text">— MY TOOLKIT</span>
-        </div>
-        <div class="grid-container animate-up delay-1">
-            <div class="glass-card skill-card text-center">
-                <h3>Programming</h3>
-                <p class="text-muted">Java, Python, C</p>
-            </div>
-            <div class="glass-card skill-card text-center delay-1">
-                <h3>Frameworks & Libs</h3>
-                <p class="text-muted">React, NumPy, Pandas</p>
-            </div>
-            <div class="glass-card skill-card text-center delay-2">
-                <h3>Databases & Tools</h3>
-                <p class="text-muted">MySQL, SQL, Git/Github</p>
-            </div>
-        </div>
-    </section>
+<div class="theme-toggle">
+☀️ / 🌙
+</div>
 
-    <section id="projects" class="section-container relative-z">
-        <div class="section-header animate-up text-center">
-            <h2>Featured Projects</h2>
-            <span class="gradient-text">— WHAT I'VE BUILT</span>
-        </div>
-        <div class="grid-container animate-up delay-1">
-            <div class="glass-card project-card">
-                <h3>Banking Management System</h3>
-                <span class="tech-stack">Python, Streamlit</span>
-                <ul class="project-bullets">
-                    <li>Built a web-based AI banking assistant using Streamlit.</li>
-                    <li>Automated balance inquiries and customer data retrieval.</li>
-                    <li>Improved user task completion time by 40%.</li>
-                </ul>
-            </div>
-            <div class="glass-card project-card delay-1">
-                <h3>Employee Management System</h3>
-                <span class="tech-stack">Java, MySQL</span>
-                <ul class="project-bullets">
-                    <li>Developed full-stack system to streamline HR workflows.</li>
-                    <li>Integrated secure MySQL database improving data accuracy by 35%.</li>
-                    <li>Implemented automated reporting modules.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<button class="btn-contact" onclick="openDrawer()">
+Contact Me
+</button>
 
-    <div id="contactSidebar" class="contact-sidebar">
-        <button id="closeSidebarBtn" class="close-sidebar-btn">✕</button>
-        <div class="sidebar-content">
-            <h3 class="sidebar-heading glow-text">Let's Work Together</h3>
-            <p class="sidebar-subtext">Get in touch to collaborate or discuss opportunities.</p>
-            <button class="btn btn-primary get-started-btn">Get Started</button>
-            <div class="sidebar-details">
-                <div class="contact-item">
-                    <span class="label">Email</span>
-                    <a href="mailto:priyanshusharma18015@gmail.com">priyanshusharma18015@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <span class="label">Phone</span>
-                    <a href="tel:+917439451492">+91 7439451492</a>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+
+</nav>
+
+
+
+<!-- HERO -->
+<section id="hero">
+
+<div class="hero-glow"></div>
+
+<div class="hero-arc"></div>
+
+
+<div class="hero-badge">
+Available for Opportunities →
+</div>
+
+
+
+<h1 class="hero-name">
+Priyanshu <br>
+Sharma
+</h1>
+
+
+
+<!-- PS with orbit -->
+<div class="avatar-wrapper">
+
+<div class="orbit-ring">
+<div class="orbit-planet"></div>
+</div>
+
+<div class="avatar-ring">
+PS
+</div>
+
+</div>
+
+
+
+<p class="hero-role">
+<span>MCA Student</span> | Java, Python & Web Developer
+</p>
+
+
+<p class="hero-desc">
+
+Motivated Computer Application graduate with expertise in Java, Python and web development.
+Skilled in building real-world software applications and collaborating effectively in team environments.
+
+</p>
+
+
+<div class="hero-btns">
+
+<button class="btn-outline" onclick="scrollToSection('projects')">
+View Projects
+</button>
+
+<button class="btn-primary" onclick="openDrawer()">
+Contact Me
+</button>
+
+</div>
+
+
+</section>
+
+
+
+<!-- ABOUT -->
+<section id="about">
+
+<h2 class="section-title fade-up">
+ABOUT ME
+</h2>
+
+<div class="section-sub fade-up">
+WHO I AM
+</div>
+
+
+<div class="about-card fade-up">
+
+Currently pursuing MCA.
+Passionate about Java, Python and Web Development.
+Interested in Full Stack, Data Analytics and AI based projects.
+
+</div>
+
+</section>
+
+
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+<h2 class="section-title section-title-center fade-up">
+Technical Skills
+</h2>
+
+<div class="section-sub section-sub-center fade-up">
+MY TOOLKIT
+</div>
+
+
+<div class="skills-grid">
+
+<div class="skill-card fade-up">
+<h3>Programming</h3>
+<p>Java, Python, SQL</p>
+</div>
+
+
+<div class="skill-card fade-up">
+<h3>Libraries</h3>
+<p>NumPy, Pandas</p>
+</div>
+
+
+<div class="skill-card fade-up">
+<h3>Tools</h3>
+<p>Git, MySQL</p>
+</div>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- PROJECT -->
+<section id="projects">
+
+<h2 class="section-title section-title-center fade-up">
+Projects
+</h2>
+
+<div class="section-sub section-sub-center fade-up">
+WHAT I BUILT
+</div>
+
+
+
+<div class="projects-grid">
+
+
+<div class="project-card fade-up">
+
+<h3>Banking System</h3>
+
+<p>
+Python + Streamlit project for managing bank records.
+</p>
+
+</div>
+
+
+
+<div class="project-card fade-up">
+
+<h3>Employee System</h3>
+
+<p>
+Java + MySQL full stack system.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+
+<h2 class="section-title section-title-center fade-up">
+Experience
+</h2>
+
+<div class="section-sub section-sub-center fade-up">
+MY JOURNEY
+</div>
+
+
+
+<div class="exp-grid">
+
+
+<div class="exp-card fade-up">
+
+<h3>MCA</h3>
+
+<p>KIIT University</p>
+
+</div>
+
+
+
+<div class="exp-card fade-up">
+
+<h3>Web Intern</h3>
+
+<p>Acmegrade</p>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- CONTACT DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+
+
+<div class="drawer" id="drawer">
+
+<button class="drawer-close" onclick="closeDrawer()">✕</button>
+
+
+<h2>
+Let's Work Together
+</h2>
+
+
+<button class="btn-primary drawer-btn">
+
+Get Started
+
+</button>
+
+
+<p>Email</p>
+<p>
+priyanshusharma18015@gmail.com
+</p>
+
+
+<p>Phone</p>
+<p>
++91 7439451492
+</p>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
