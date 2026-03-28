@@ -1,522 +1,519 @@
-
-I updated my memory. What did you learn about me?
-
-8:36 PM
-
-Viewed memory edits
-Viewed memory edits
-Here's what I have from my memories about you, Priyanshu:
-
-Who you are: Priyanshu Sharma, a student based in Kolkata, India — likely in a CS or related program given your recurring exam prep across subjects.
-
-Active Projects:
-
-ChotaCA — Full Stack + Data Analytics project using Plotly and PostgreSQL-compatible DBs (Neon, Railway, AWS RDS, local PG)
-T90 AI Device — Agentic AI device concept with a defined roadmap and architecture
-Portfolio Website — Personal site with orbit animations, theme toggle, and contact drawer interactions
-Current Focus (as of recent updates):
-
-DAA exam prep using a 1-day past-paper revision strategy (daa_sem2 trigger)
-Java interface and stack implementation practice
-Portfolio UI animation enhancements
-Your Stack: HTML/CSS/JS, Java, Git, PostgreSQL variants, PowerShell/terminal
-
-Preferences:
-
-Complete rewritten code over partial edits
-Concise, exam-oriented summaries
-Explanations in both English and Bengali for academic topics
-Special Triggers I remember: Astronum, Astronum2, T90 project, antiV, CN mode, daa_sem2
-
-Is there anything you'd like to update or correct?
-
-ok now start with Portfolio UI animation enhancements i share you the slide u have make it same to same and slide, beautiful scrolling animation...with html, css and js
-
-8:40 PM
-I'd love to help! Please go ahead and share the slide/image you want me to replicate — I'll build it out with smooth scrolling animations in HTML, CSS, and JS.
-
-1774711534908_image.png
-1774711767684_image.png
-1774712308267_image.png
-1774712498289_image.png
-Create a modern futuristic portfolio landing page with 3 slides using HTML, CSS, JavaScript (vanilla JS only). Design style should be premium, minimal, glowing, orange accent, dark theme with smooth animations.
-GENERAL DESIGN SYSTEM
-* Font style: modern professional (Poppins / Montserrat / Orbitron combination)
-* Color palette:
-   * Primary accent: 
-#ff5a1f (orange glow)
-   * Secondary accent: 
-#ff7a2f
-   * Background dark: 
-#0b0b0f
-   * Gradient background: subtle dark navy + black
-* Style keywords:
-   * soft glow
-   * glassmorphism
-   * minimal futuristic
-   * smooth motion animation
-   * high resolution background images
-* Page must be fully responsive
-* Use CSS variables for theme colors
-* Smooth scroll transition between slides
-* Add subtle particle dots in background
-SLIDE 1 — HERO (PORTFOLIO INTRO)
-Design inspiration similar to first image:
-* Center text: PORT FOLIO
-* Typography: bold uppercase white color large font size letter spacing slightly expanded
-ANIMATIONS
-1. Add a small glowing circle orbiting around the letter "O" in PORT
-   * orbit animation like a planet
-   * smooth infinite rotation
-   * small glowing dot with blur
-   * use CSS keyframes rotate animation
-2. Add soft orange glow moving effect on letter "F"
-   * glowing light should move left to right repeatedly
-   * subtle gradient glow animation
-   * use pseudo element ::after with animation
-3. Add floating small circle particles around hero text
-4. Background should be dark gradient
-5. Add small subtitle below: COMMUNICATOR GRAPHIC DESIGNER
-6. Add scroll indicator animation below text
-SLIDE 2 — MENTORIAS / PROJECT STATS SECTION
-Design similar to second image: High resolution background of:
-* desk
-* laptop
-* warm orange lamp lighting
-* plants
-Overlay text: MENTORIAS
-Add project statistics cards
-Display stats like: 20+ Projects Completed 200+ Clients 500+ Hours Work
-Cards design:
-* glass effect
-* slight blur background
-* orange border glow
-* hover scale animation
-Add heading: Design That Delivers Real Results
-Add subtle parallax effect on background image
-SLIDE 3 — SERVICES / FEATURES SECTION
-Design similar to last image style.
-Content: Heading: Let's Create Something Exceptional
-Show animated cards in arc layout or grid:
-* Web Design
-* UI UX
-* Branding
-* Development
-* Portfolio Design
-Each card:
-* soft shadow
-* orange gradient highlight
-* hover lift animation
-* icon or illustration
-Add testimonials section below: 3 testimonial cards with rating stars
-NIGHT / DAY MODE TOGGLE
-Add toggle button top right corner.
-Dark mode: background dark text white orange glow strong
-Light mode: background white text dark orange accent softer
-Add smooth transition between themes.
-CONTACT SIDEBAR (TRANSPARENT GLASS EFFECT)
-Add floating button bottom right corner: icon: contact
-When clicked: open animated sidebar from right
-Sidebar design: transparent glass blur background smooth slide animation
-Content inside sidebar: Contact Us
-Email Phone LinkedIn GitHub
-Add animated icons
-Close button at top
-Sidebar overlay should darken background slightly.
-TECHNICAL REQUIREMENTS
-Use: HTML5 semantic structure CSS3 animations Flexbox and Grid Vanilla JavaScript only No frameworks
-JS features required: theme toggle sidebar open/close animation scroll animation orbit animation trigger hover interactions
-FILE STRUCTURE
-Provide code in 3 files:
-index.html style.css script.js
-EXTRA ANIMATION DETAILS
-Orbit animation example:
-* circular path around letter
-* duration 6s infinite linear
-Glow animation example:
-* gradient moving highlight
-* 3s infinite alternate
-Use cubic-bezier easing for premium motion feel.
-
-Show more
-9:13 PM
-
-Reading frontend design skill
-Reading frontend design skill
-This is a big build — let me craft all 3 files with full premium quality. Give me a moment!
-
-
-Created 3 files
-Created 3 files
-Now let me combine everything into a single deliverable HTML file for easy use:
-
-
-Ran 3 commands, read a file
-Ran 3 commands, read a file
-Your portfolio is ready! Here's what's built inside:
-
-Slide 1 — Hero
-
-Giant PORT / FOLIO bold text with staggered letter entrance animation
-🟠 Orbit dot spinning around the R (6s infinite, glowing)
-Orange glow sweep sliding across F (CSS pseudo-element)
-18 floating DOM particles in the background
-Canvas particle field with connected dots across all pages
-Scroll pulse indicator + curriculum vitae tag
-Slide 2 — Mentorias
-
-Warm orange lamp desk atmosphere (pure CSS radial gradients + flicker animation)
-Big MEN-TORIAS orange title
-3 glassmorphism stat cards (20+, 200+, 500+) with animated count-up on scroll
-Parallax on background as you scroll
-Slide 3 — Services
-
-5 service cards in a responsive grid with 3D tilt on hover, orange underline slide-in, icon color flip
-3 testimonial cards with client avatars
-Auto-scrolling ticker footer strip
-Global Features
-
-☀/☽ Dark/Light mode toggle with flash transition + localStorage save
-Contact sidebar — glass blur, slides from right, items animate in one by one
-Keyboard navigation (↑↓ arrows, Esc to close sidebar)
-Fully responsive down to mobile
-Use portfolio_complete.html as a single standalone file — just open in browser!
-
-Portfolio complete
-Code · HTML 
-Index
-Code · HTML 
-Style
-Code · CSS 
-Script
-JS 
-
-
-
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-Index · HTML
-Copy
-
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Priyanshu Sharma</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Montserrat:wght@300;400;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyanshu Sharma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Montserrat:wght@300;400;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
- 
-  <!-- CANVAS PARTICLES -->
-  <canvas id="particleCanvas"></canvas>
- 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-logo">
-      <span class="nav-bracket">[</span>PRSHN<span class="nav-bracket">]</span>
-    </div>
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="toggle-icon sun">☀</span>
-        <span class="toggle-track"></span>
-        <span class="toggle-icon moon">☽</span>
-      </button>
-      <button class="contact-fab" id="contactBtn" aria-label="Contact">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.51-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-        </svg>
-        <span>Contact</span>
-      </button>
-    </div>
-  </nav>
- 
-  <!-- SCROLL CONTAINER -->
-  <div class="scroll-container" id="scrollContainer">
- 
-    <!-- ========== SLIDE 1 — HERO ========== -->
-    <section class="slide slide-hero" id="slide1">
- 
-      <!-- Floating nav dots -->
-      <div class="scroll-dots">
-        <span class="dot active" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-      </div>
- 
-      <!-- Tag top-right -->
-      <div class="hero-tag">
-        <span class="tag-year">25</span>
-        <span class="tag-text">CURRICULUM<br>VITAE</span>
-      </div>
- 
-      <!-- Main hero text -->
-      <div class="hero-text-wrap">
-        <div class="hero-line" id="heroLine1">
-          <span class="hero-letter" style="--i:0">P</span>
-          <span class="hero-letter" style="--i:1">O</span>
-          <span class="hero-letter orbit-host" style="--i:2" id="orbitLetter">
-            R
-            <span class="orbit-ring">
-              <span class="orbit-dot"></span>
-            </span>
+
+<!-- ░░ PARTICLE CANVAS ░░ -->
+<canvas id="particleCanvas"></canvas>
+
+<!-- ░░ NOISE GRAIN OVERLAY ░░ -->
+<div class="grain"></div>
+
+<!-- ░░ NAV ░░ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-logo">
+    <span class="bracket">[</span>PS<span class="bracket">]</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#slide1" class="nav-link active" data-slide="0">Home</a></li>
+    <li><a href="#slide2" class="nav-link" data-slide="1">Stats</a></li>
+    <li><a href="#slide3" class="nav-link" data-slide="2">Projects</a></li>
+    <li><a href="#slide4" class="nav-link" data-slide="3">Skills</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+      <span class="t-icon" id="themeIcon">☽</span>
+    </button>
+    <button class="contact-open-btn" id="contactOpenBtn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.51-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Contact
+    </button>
+  </div>
+</nav>
+
+<!-- ░░ SCROLL PROGRESS ░░ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ░░ SIDE DOT NAV ░░ -->
+<nav class="side-nav">
+  <button class="side-dot active" data-target="0" aria-label="Slide 1"></button>
+  <button class="side-dot" data-target="1" aria-label="Slide 2"></button>
+  <button class="side-dot" data-target="2" aria-label="Slide 3"></button>
+  <button class="side-dot" data-target="3" aria-label="Slide 4"></button>
+</nav>
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     SCROLL CONTAINER
+     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<div class="scroll-wrap" id="scrollWrap">
+
+  <!-- ════════════════════════════════
+       SLIDE 1 — HERO
+       ════════════════════════════════ -->
+  <section class="slide" id="slide1">
+    <div class="hero-inner">
+
+      <!-- LEFT: Text -->
+      <div class="hero-left">
+        <div class="hero-eyebrow reveal">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">FULL STACK DEVELOPER</span>
+        </div>
+
+        <h1 class="hero-heading">
+          <span class="h-line reveal" style="--d:.1s">
+            <span class="h-word">PORT</span>
           </span>
-          <span class="hero-letter" style="--i:3">T</span>
+          <span class="h-line reveal" style="--d:.2s">
+            <span class="h-word accent-stroke">FOLIO</span>
+          </span>
+        </h1>
+
+        <div class="hero-name reveal" style="--d:.35s">PRIYANSHU SHARMA</div>
+
+        <div class="hero-tags reveal" style="--d:.45s">
+          <span class="tag">JAVA</span>
+          <span class="tag-sep">•</span>
+          <span class="tag">PYTHON</span>
+          <span class="tag-sep">•</span>
+          <span class="tag">WEB DEV</span>
         </div>
-        <div class="hero-line" id="heroLine2">
-          <span class="hero-letter glow-f" style="--i:4">F</span>
-          <span class="hero-letter" style="--i:5">O</span>
-          <span class="hero-letter" style="--i:6">L</span>
-          <span class="hero-letter" style="--i:7">I</span>
-          <span class="hero-letter" style="--i:8">O</span>
+
+        <p class="hero-bio reveal" style="--d:.55s">
+          MCA candidate at KIIT. Building real-world software through<br>
+          clean code, smart design, and relentless iteration.
+        </p>
+
+        <div class="hero-ctas reveal" style="--d:.65s">
+          <a href="assets/Priyanshu_Sharma_CV.pdf" download class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <button class="btn-ghost" id="heroContactBtn">Let's Talk →</button>
         </div>
-      </div>
- 
-      <!-- Subtitle -->
-      <div class="hero-subtitle">
-        <p>COMMUNICATOR</p>
-        <p>&amp; GRAPHIC DESIGNER</p>
-      </div>
- 
-      <!-- Scroll indicator -->
-      <div class="scroll-indicator">
-        <div class="scroll-line">
-          <span class="scroll-pulse"></span>
-        </div>
-        <span class="scroll-label">SCROLL DOWN</span>
-      </div>
- 
-      <!-- Side decoration -->
-      <div class="side-deco left">
-        <div class="deco-circle red"></div>
-      </div>
-      <div class="side-deco right">
-        <span class="deco-dot"></span>
-        <span class="deco-dot active"></span>
-        <span class="deco-dot"></span>
-      </div>
- 
-      <!-- Floating particles (JS generated) -->
-      <div class="hero-particles" id="heroParticles"></div>
-    </section>
- 
-    <!-- ========== SLIDE 2 — MENTORIAS / STATS ========== -->
-    <section class="slide slide-mentorias" id="slide2">
-      <div class="mentorias-bg">
-        <div class="bg-overlay"></div>
-        <!-- Animated gradient desk background -->
-        <div class="desk-scene">
-          <div class="desk-glow"></div>
-          <div class="lamp-ray"></div>
+
+        <!-- Socials strip -->
+        <div class="hero-socials reveal" style="--d:.75s">
+          <a href="mailto:priyanshusharma18015@gmail.com" class="social-link" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://github.com/priyanshusharma445" target="_blank" class="social-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/priyanshu-sharma" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
         </div>
       </div>
- 
-      <div class="mentorias-content">
-        <div class="mentorias-left">
-          <h2 class="mentorias-title reveal-up">
-            <span>MEN-</span><br>
-            <span>TORIAS</span>
-          </h2>
-          <p class="mentorias-sub reveal-up" style="--d:0.2s">
-            Design That Delivers<br><strong>Real Results</strong>
-          </p>
-        </div>
- 
-        <div class="mentorias-right">
-          <!-- Stats cards -->
-          <div class="stats-grid">
-            <div class="stat-card reveal-up" style="--d:0.1s">
-              <div class="stat-number" data-target="20">0</div>
-              <div class="stat-plus">+</div>
-              <div class="stat-label">Projects<br>Completed</div>
-              <div class="card-glow"></div>
-            </div>
-            <div class="stat-card reveal-up" style="--d:0.2s">
-              <div class="stat-number" data-target="200">0</div>
-              <div class="stat-plus">+</div>
-              <div class="stat-label">Happy<br>Clients</div>
-              <div class="card-glow"></div>
-            </div>
-            <div class="stat-card reveal-up" style="--d:0.3s">
-              <div class="stat-number" data-target="500">0</div>
-              <div class="stat-plus">+</div>
-              <div class="stat-label">Hours of<br>Work</div>
-              <div class="card-glow"></div>
-            </div>
+
+      <!-- RIGHT: Profile Orbit -->
+      <div class="hero-right reveal" style="--d:.2s">
+        <div class="orbit-system">
+          <!-- Glow behind -->
+          <div class="profile-glow-bg"></div>
+
+          <!-- Outer orbit ring -->
+          <div class="orbit-ring ring-outer">
+            <div class="orbit-dot dot-outer"></div>
           </div>
-        </div>
-      </div>
-    </section>
- 
-    <!-- ========== SLIDE 3 — SERVICES ========== -->
-    <section class="slide slide-services" id="slide3">
-      <div class="services-inner">
-        <div class="services-header reveal-up">
-          <p class="services-eyebrow">WHAT I DO</p>
-          <h2 class="services-title">Let's Create Something<br><em>Exceptional</em></h2>
-        </div>
- 
-        <!-- Services arc/grid -->
-        <div class="services-grid" id="servicesGrid">
-          <div class="service-card reveal-up" style="--d:0s">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M7 21h10M12 17v4"/></svg>
-            </div>
-            <h3>Web Design</h3>
-            <p>Pixel-perfect interfaces built for impact</p>
-            <div class="card-line"></div>
+          <!-- Inner tilted orbit ring -->
+          <div class="orbit-ring ring-inner">
+            <div class="orbit-dot dot-inner"></div>
           </div>
-          <div class="service-card reveal-up" style="--d:0.1s">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-            </div>
-            <h3>UI / UX</h3>
-            <p>User-centered design systems that delight</p>
-            <div class="card-line"></div>
-          </div>
-          <div class="service-card reveal-up" style="--d:0.2s">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3>Branding</h3>
-            <p>Visual identities that leave a lasting mark</p>
-            <div class="card-line"></div>
-          </div>
-          <div class="service-card reveal-up" style="--d:0.3s">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3>Development</h3>
-            <p>Clean, scalable code behind beautiful UI</p>
-            <div class="card-line"></div>
-          </div>
-          <div class="service-card reveal-up" style="--d:0.4s">
-            <div class="service-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h3>Portfolio Design</h3>
-            <p>Showcasing your work with elegance</p>
-            <div class="card-line"></div>
-          </div>
-        </div>
- 
-        <!-- Testimonials -->
-        <div class="testimonials-section reveal-up" style="--d:0.5s">
-          <p class="testimonials-label">TRUSTED BY BRANDS, LOVED BY CLIENTS</p>
-          <div class="testimonials-grid">
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>"Absolutely transformed our brand. The attention to detail was incredible."</p>
-              <div class="client-info">
-                <div class="client-avatar">AK</div>
-                <div>
-                  <strong>Arjun Kumar</strong>
-                  <span>CEO, TechFlow</span>
-                </div>
+
+          <!-- Profile circle -->
+          <div class="profile-circle">
+            <div class="profile-img-wrap">
+              <!-- Placeholder gradient avatar (replace src with real photo) -->
+              <div class="profile-placeholder">
+                <span class="profile-initials">PS</span>
               </div>
+              <!-- Uncomment below and add real photo:
+              <img src="assets/profile.jpg" alt="Priyanshu Sharma" class="profile-img"/> -->
             </div>
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>"Best investment we made. Our conversion rate jumped 3x after the redesign."</p>
-              <div class="client-info">
-                <div class="client-avatar">SM</div>
-                <div>
-                  <strong>Sneha Mehta</strong>
-                  <span>Founder, Bloom Studio</span>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>"Fast, creative, and professional. Delivered beyond our expectations every time."</p>
-              <div class="client-info">
-                <div class="client-avatar">RD</div>
-                <div>
-                  <strong>Rahul Das</strong>
-                  <span>Product Lead, Nexus</span>
-                </div>
-              </div>
-            </div>
+          </div>
+
+          <!-- Floating badge -->
+          <div class="orbit-badge badge-top">
+            <span class="badge-dot"></span>Oracle Certified
+          </div>
+          <div class="orbit-badge badge-bot">
+            <span class="badge-dot"></span>KIIT • MCA
           </div>
         </div>
- 
-        <!-- Footer strip -->
-        <div class="footer-strip">
-          <span>• PRIYANSHU SHARMA •</span>
-          <span>• FRONTEND DEVELOPER •</span>
-          <span>• UI DESIGNER •</span>
-          <span>• KOLKATA •</span>
-          <span>• PRIYANSHU SHARMA •</span>
-          <span>• FRONTEND DEVELOPER •</span>
-          <span>• UI DESIGNER •</span>
+      </div>
+
+    </div>
+
+    <!-- hero particles -->
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue">
+      <div class="cue-line"><span class="cue-fill"></span></div>
+      <span class="cue-label">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SLIDE 2 — PROJECT STATS
+       ════════════════════════════════ -->
+  <section class="slide" id="slide2">
+    <div class="desk-bg">
+      <div class="desk-lamp-glow"></div>
+      <div class="desk-ambient"></div>
+    </div>
+
+    <div class="stats-inner">
+      <div class="section-header reveal">
+        <p class="s-eyebrow">AT A GLANCE</p>
+        <h2 class="s-title">Project<br><em>Experience</em></h2>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal" style="--d:.1s">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M7 21h10M12 17v4"/></svg>
+          </div>
+          <div class="stat-val"><span class="counter" data-target="2">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-label">Projects<br>Completed</div>
+          <div class="sc-glow"></div>
+        </div>
+        <div class="stat-card reveal" style="--d:.2s">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <div class="stat-val"><span class="counter" data-target="1">0</span></div>
+          <div class="stat-label">Internship<br>Experience</div>
+          <div class="sc-glow"></div>
+        </div>
+        <div class="stat-card reveal" style="--d:.3s">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="stat-val"><span class="counter" data-target="6">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-label">Technologies<br>Used</div>
+          <div class="sc-glow"></div>
+        </div>
+        <div class="stat-card reveal" style="--d:.4s">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="stat-val"><span class="counter" data-target="75" data-decimal="true">0</span></div>
+          <div class="stat-label">CGPA — MCA<br>Performance</div>
+          <div class="sc-glow"></div>
         </div>
       </div>
-    </section>
- 
-  </div><!-- end scroll-container -->
- 
-  <!-- ========== CONTACT SIDEBAR ========== -->
-  <div class="sidebar-overlay" id="sidebarOverlay"></div>
-  <aside class="contact-sidebar" id="contactSidebar">
-    <button class="sidebar-close" id="sidebarClose">✕</button>
-    <div class="sidebar-content">
-      <h3 class="sidebar-title">Contact<span class="accent"> Us</span></h3>
-      <p class="sidebar-sub">Let's build something extraordinary together.</p>
- 
-      <div class="contact-items">
-        <a href="mailto:priyanshu@example.com" class="contact-item">
-          <div class="ci-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+
+      <!-- Certifications strip -->
+      <div class="cert-strip reveal" style="--d:.5s">
+        <div class="cert-item">
+          <div class="cert-badge">✦</div>
+          <div>
+            <strong>Generative AI Professional</strong>
+            <span>Oracle University — 2025</span>
           </div>
-          <div class="ci-text">
-            <span class="ci-label">Email</span>
-            <span class="ci-value">priyanshu@example.com</span>
+        </div>
+        <div class="cert-divider"></div>
+        <div class="cert-item">
+          <div class="cert-badge">✦</div>
+          <div>
+            <strong>Web Development Intern</strong>
+            <span>Acmegrade (IIT Bombay, IIM Ahmedabad, Wipro) — 2024</span>
           </div>
-          <span class="ci-arrow">→</span>
-        </a>
-        <a href="tel:+91000000000" class="contact-item">
-          <div class="ci-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.51-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          </div>
-          <div class="ci-text">
-            <span class="ci-label">Phone</span>
-            <span class="ci-value">+91 000 000 0000</span>
-          </div>
-          <span class="ci-arrow">→</span>
-        </a>
-        <a href="https://linkedin.com" target="_blank" class="contact-item">
-          <div class="ci-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </div>
-          <div class="ci-text">
-            <span class="ci-label">LinkedIn</span>
-            <span class="ci-value">linkedin.com/in/priyanshu</span>
-          </div>
-          <span class="ci-arrow">→</span>
-        </a>
-        <a href="https://github.com" target="_blank" class="contact-item">
-          <div class="ci-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-          </div>
-          <div class="ci-text">
-            <span class="ci-label">GitHub</span>
-            <span class="ci-value">github.com/priyanshu</span>
-          </div>
-          <span class="ci-arrow">→</span>
-        </a>
-      </div>
- 
-      <div class="sidebar-cta">
-        <button class="cta-btn">Let's Work Together →</button>
+        </div>
       </div>
     </div>
-  </aside>
- 
-  <script src="script.js"></script>
+  </section>
+
+  <!-- ════════════════════════════════
+       SLIDE 3 — PROJECTS
+       ════════════════════════════════ -->
+  <section class="slide slide-overflow" id="slide3">
+    <div class="projects-inner">
+      <div class="section-header reveal">
+        <p class="s-eyebrow">WHAT I'VE BUILT</p>
+        <h2 class="s-title">Featured<br><em>Projects</em></h2>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="filter-bar reveal" style="--d:.1s" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+
+      <!-- Project cards -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal" style="--d:.15s" data-cat="python">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p1">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,90,31,0.6)" stroke-width="1"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M7 21h10M12 17v4"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="view-btn">View Project →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Streamlit</span>
+              <span class="tech-chip">AI</span>
+            </div>
+            <h3 class="project-title">Banking Management System</h3>
+            <p class="project-desc">AI-based banking assistant for account operations. Improved task completion by 40%, reduced navigation steps by 30%.</p>
+          </div>
+          <div class="pc-accent-line"></div>
+        </div>
+
+        <div class="project-card reveal" style="--d:.25s" data-cat="java">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p2">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,90,31,0.6)" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/><circle cx="18" cy="5" r="2"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="view-btn">View Project →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech">
+              <span class="tech-chip">Java</span>
+              <span class="tech-chip">MySQL</span>
+              <span class="tech-chip">Full Stack</span>
+            </div>
+            <h3 class="project-title">Employee Management System</h3>
+            <p class="project-desc">HR workflow automation with database integration. Reduced manual processing time by 50%, improved data accuracy by 35%.</p>
+          </div>
+          <div class="pc-accent-line"></div>
+        </div>
+
+        <div class="project-card reveal" style="--d:.35s" data-cat="web">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder p3">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,90,31,0.6)" stroke-width="1"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="view-btn">View Project →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tech">
+              <span class="tech-chip">React</span>
+              <span class="tech-chip">HTML/CSS</span>
+              <span class="tech-chip">JS</span>
+            </div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">Personal portfolio with scroll-snap layout, glassmorphism design, and orbit animations built for maximum visual impact.</p>
+          </div>
+          <div class="pc-accent-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SLIDE 4 — SKILLS + EDUCATION
+       ════════════════════════════════ -->
+  <section class="slide slide-overflow" id="slide4">
+    <div class="skills-inner">
+      <div class="section-header reveal">
+        <p class="s-eyebrow">WHAT I KNOW</p>
+        <h2 class="s-title">Technical<br><em>Expertise</em></h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="--d:.05s">
+          <div class="sk-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Java Development</h3>
+          <p>OOP, JDBC, Swing, full-stack Java applications</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:82%"></div></div>
+          <div class="sk-line"></div>
+        </div>
+        <div class="skill-card reveal" style="--d:.1s">
+          <div class="sk-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Python Development</h3>
+          <p>Streamlit, NumPy, Pandas, data pipelines</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:78%"></div></div>
+          <div class="sk-line"></div>
+        </div>
+        <div class="skill-card reveal" style="--d:.15s">
+          <div class="sk-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M7 21h10M12 17v4"/></svg>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>HTML5, CSS3, JavaScript, responsive design</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:80%"></div></div>
+          <div class="sk-line"></div>
+        </div>
+        <div class="skill-card reveal" style="--d:.2s">
+          <div class="sk-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <h3>React Development</h3>
+          <p>Components, hooks, state management, SPA</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:70%"></div></div>
+          <div class="sk-line"></div>
+        </div>
+        <div class="skill-card reveal" style="--d:.25s">
+          <div class="sk-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>SQL & Databases</h3>
+          <p>MySQL, schema design, complex queries, CRUD</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:75%"></div></div>
+          <div class="sk-line"></div>
+        </div>
+        <div class="skill-card reveal" style="--d:.3s">
+          <div class="sk-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Data Analytics</h3>
+          <p>NumPy, Pandas, data visualization, Generative AI</p>
+          <div class="sk-bar"><div class="sk-fill" style="--w:65%"></div></div>
+          <div class="sk-line"></div>
+        </div>
+      </div>
+
+      <!-- Education Timeline -->
+      <div class="edu-section reveal" style="--d:.35s">
+        <h3 class="edu-title">Education Timeline</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+            <div class="tl-content">
+              <span class="tl-year">2025 – Present</span>
+              <h4>Master of Computer Applications</h4>
+              <p>Kalinga Institute of Industrial Technology (KIIT)</p>
+              <span class="tl-cgpa">CGPA: 7.5</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2022 – 2025</span>
+              <h4>Bachelor of Computer Applications</h4>
+              <p>Techno India University</p>
+              <span class="tl-cgpa">CGPA: 7.82</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer ticker -->
+      <div class="ticker-wrap">
+        <div class="ticker-inner" id="tickerInner">
+          <span>• PRIYANSHU SHARMA</span>
+          <span>• SOFTWARE DEVELOPER</span>
+          <span>• JAVA • PYTHON • REACT</span>
+          <span>• KIIT MCA 2025</span>
+          <span>• ORACLE CERTIFIED</span>
+          <span>• OPEN TO WORK</span>
+          <span>• PRIYANSHU SHARMA</span>
+          <span>• SOFTWARE DEVELOPER</span>
+          <span>• JAVA • PYTHON • REACT</span>
+          <span>• KIIT MCA 2025</span>
+          <span>• ORACLE CERTIFIED</span>
+          <span>• OPEN TO WORK</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /scroll-wrap -->
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+     CONTACT SIDEBAR
+     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<div class="sb-overlay" id="sbOverlay"></div>
+<aside class="sidebar" id="sidebar">
+  <button class="sb-close" id="sbClose">✕</button>
+
+  <div class="sb-body">
+    <div class="sb-header">
+      <h2 class="sb-title">Let's <span>Connect</span></h2>
+      <p class="sb-sub">Available for freelance work and full-time opportunities.</p>
+    </div>
+
+    <div class="sb-links">
+      <a href="mailto:priyanshusharma18015@gmail.com" class="sb-item">
+        <div class="sbi-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="sbi-text">
+          <span class="sbi-label">Email</span>
+          <span class="sbi-val">priyanshusharma18015@gmail.com</span>
+        </div>
+        <span class="sbi-arr">→</span>
+      </a>
+      <a href="tel:+917439451492" class="sb-item">
+        <div class="sbi-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.51-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="sbi-text">
+          <span class="sbi-label">Phone</span>
+          <span class="sbi-val">+91 7439451492</span>
+        </div>
+        <span class="sbi-arr">→</span>
+      </a>
+      <div class="sb-item no-link">
+        <div class="sbi-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="sbi-text">
+          <span class="sbi-label">Location</span>
+          <span class="sbi-val">Kolkata, India</span>
+        </div>
+      </div>
+      <a href="https://linkedin.com/in/priyanshu-sharma" target="_blank" class="sb-item">
+        <div class="sbi-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div class="sbi-text">
+          <span class="sbi-label">LinkedIn</span>
+          <span class="sbi-val">Priyanshu Sharma</span>
+        </div>
+        <span class="sbi-arr">→</span>
+      </a>
+      <a href="https://github.com/priyanshusharma445" target="_blank" class="sb-item">
+        <div class="sbi-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </div>
+        <div class="sbi-text">
+          <span class="sbi-label">GitHub</span>
+          <span class="sbi-val">priyanshusharma445</span>
+        </div>
+        <span class="sbi-arr">→</span>
+      </a>
+    </div>
+
+    <div class="sb-actions">
+      <a href="assets/Priyanshu_Sharma_CV.pdf" download class="sb-cv-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+      <a href="mailto:priyanshusharma18015@gmail.com" class="sb-hire-btn">
+        Hire Me ✦
+      </a>
+    </div>
+  </div>
+</aside>
+
+<script src="script.js"></script>
 </body>
 </html>
- 
