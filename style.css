@@ -492,7 +492,10 @@ body::after {
 /* ══════════════════════════════════════════════════════════
    SLIDE 2 — STATS
    ══════════════════════════════════════════════════════════ */
-#slide2 { background: #09080a; }
+#slide2 {
+  background: var(--bg);
+  transition: background .5s var(--ease);
+}
 
 .desk-bg { position: absolute; inset: 0; z-index: 0; }
 .desk-lamp-glow {
@@ -502,10 +505,27 @@ body::after {
   animation: lampF 4s ease-in-out infinite alternate;
 }
 .desk-ambient {
-  position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse at 80% 20%, rgba(255,90,31,.06) 0%, transparent 50%),
-    linear-gradient(160deg, #09080a 0%, #110a03 60%, #09080a 100%);
+    radial-gradient(
+      ellipse at 80% 20%,
+      var(--glow-sm) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      160deg,
+      var(--bg) 0%,
+      var(--bg2) 60%,
+      var(--bg) 100%
+    );
+  transition: background .5s var(--ease);
+}
+
+[data-theme="light"] .desk-lamp-glow {
+  background: radial-gradient(
+    ellipse at 30% 100%,
+    rgba(255,90,31,.12) 0%,
+    transparent 60%
+  );
 }
 @keyframes lampF { from{opacity:.6} to{opacity:1} }
 
@@ -536,8 +556,8 @@ body::after {
 
 .stat-card {
   position: relative;
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,90,31,.18);
+  background: var(--surface);
+  border: 1px solid var(--border-o);
   border-radius: var(--radius);
   padding: 32px 20px 28px;
   text-align: center;
